@@ -17,8 +17,10 @@ public class Frame_Configuration extends JFrame{
 	
 	public void FrameSetting() {
 		
-		setVisible(true);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setVisible(true);
+		
+		
 	}
 	
 	public void FrameResize(){
@@ -53,8 +55,11 @@ public class Frame_Configuration extends JFrame{
 	}
 	
 	public void frameIcon(ImageIcon icon){
-		
-		
+				
+		String urlIcon = "";
+		Image iconFrame = Toolkit.getDefaultToolkit().getImage(getClass().getResource(urlIcon));
+		setIconImage(iconFrame);
+
 	}
 	
 	
